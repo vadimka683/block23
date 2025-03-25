@@ -1,24 +1,24 @@
 #include<iostream>
 
-#define MOND "MOND"
-#define TUES "TUES"
-#define WEDNES "WEDNES"
-#define TRURS "TRURS"
-#define FRI "FRI"
-#define SATUR "SATUR"
-#define SUN "SUN"
+#define MOND 
+#define TUES 
+#define WEDNES 
+#define TRURS 
+#define FRI 
+#define SATUR 
+#define SUN 
 
-#define DAY "DAY"
+#define DAY 
 
-#define MONDDAY 
-#define TUESDAY 
-#define WEDNESDAY 
-#define TRURSDAY 
-#define FRIDAY 
-#define SATURDAY 
-#define SUNDAY 
+#define MONDDAY "MONDAY"
+#define TUESDAY "TUESDAY" 
+#define WEDNESDAY "WEDNESDAY" 
+#define TRURSDAY "TRURSDAY" 
+#define FRIDAY "FRIDAY" 
+#define SATURDAY "SATURDAY"
+#define SUNDAY "SUNDAY" 
 
-#define NUMBER(a,b) a # b
+#define NUMBER(a,b) a ## b
 
 int main() {
 	std::cout << "Input the day of the week number: ";
