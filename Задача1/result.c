@@ -35259,27 +35259,17 @@ namespace std
 # 23 "main1.cpp"
 int main() {
  std::cout << "Input the day of the week number: ";
- int answer;
+ char answer;
  std::cin >> answer;
- if (answer == 1) {
-  std::cout << "MONDAY1";
- }
- else if (answer == 2) {
-  std::cout << "TUESDAY";
- }
- else if (answer == 3) {
-  std::cout << "WEDNESDAY";
- }
- else if (answer == 4) {
-  std::cout << "TRURSDAY";
- }
- else if (answer == 5) {
-  std::cout << "FRIDAY";
- }
- else if (answer == 6) {
-  std::cout << "SATURDAY";
- }
- else if (answer == 7) {
-  std::cout << "SUNDAY";
+ switch (answer)
+ {
+ case'1':std::cout << "MONDAY"; break;
+ case'2':std::cout << "TUESDAY"; break;
+ case'3':std::cout << "WEDNESDAY"; break;
+ case'4':std::cout << "TRURSDAY"; break;
+ case'5':std::cout << "FRIDAY"; break;
+ case'6':std::cout << "SATURDAY"; break;
+ case'7':std::cout << "SUNDAY"; break;
+ default: break;
  }
 }

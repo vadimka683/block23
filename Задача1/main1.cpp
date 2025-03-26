@@ -2,11 +2,11 @@
 
 #define MOND 
 #define TUES 
-#define WEDNES 
-#define TRURS 
-#define FRI 
+#define WEDNES  
+#define TRURS  
+#define FRI  
 #define SATUR 
-#define SUN 
+#define SUN  
 
 #define DAY 
 
@@ -18,31 +18,21 @@
 #define SATURDAY "SATURDAY"
 #define SUNDAY "SUNDAY" 
 
-#define NUMBER(a,b) a ## b
+#define NUMBER(a) a ## DAY
 
 int main() {
 	std::cout << "Input the day of the week number: ";
-	int answer;
+	char answer;
 	std::cin >> answer;
-	if (answer == 1) {
-		std::cout << NUMBER(MOND, DAY);
-	}
-	else if (answer == 2) {
-		std::cout << NUMBER(TUES, DAY);
-	}
-	else if (answer == 3) {
-		std::cout << NUMBER(WEDNES, DAY);
-	}
-	else if (answer == 4) {
-		std::cout << NUMBER(TRURS, DAY);
-	}
-	else if (answer == 5) {
-		std::cout << NUMBER(FRI, DAY);
-	}
-	else if (answer == 6) {
-		std::cout << NUMBER(SATUR, DAY);
-	}
-	else if (answer == 7) {
-		std::cout << NUMBER(SUN, DAY);
+	switch (answer)
+	{
+	case'1':std::cout << NUMBER(MOND); break;
+	case'2':std::cout << NUMBER(TUES); break;
+	case'3':std::cout << NUMBER(WEDNES); break;
+	case'4':std::cout << NUMBER(TRURS); break;
+	case'5':std::cout << NUMBER(FRI); break;
+	case'6':std::cout << NUMBER(SATUR); break;
+	case'7':std::cout << NUMBER(SUN); break;
+	default: break;
 	}
 }
